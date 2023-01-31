@@ -1,0 +1,85 @@
+:root{
+    font-family: 'Prompt', sans-serif;
+}
+
+html,body{
+    display: flex;
+    flex-direction: row;
+    background-image: url(/content/backround.jpg);
+    background-size: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+.R_side{
+    display: flex;
+    height: 100%;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #f7f7f7;
+}
+
+
+.R_text{
+    display: flex;
+    font-size: large;
+    height: 35%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.R_text h2 {
+    text-align: center;
+    width: 70%;
+}
+
+.form{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2%;
+}
+
+
+.form_div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.form_imput{
+    padding-top: 3%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.R_bottom{
+    display: flex;
+    
+}
+
+.L_side{
+    display: flex;
+    width: 65%;
+    
+}
+.div_logo{
+    margin-top: 30%;
+    margin-bottom: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+}
+
+.logo{
+    color: white;
+    font-size: 40px;
+}
