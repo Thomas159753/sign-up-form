@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -21,43 +22,39 @@
             <h2>This is my first sign up form by The Odin  project putting in practice my knowledge on making forms!</h2>
         </div>
         <div class="form">
-            <h1>Lets do this!</h1>
-            <form class="form_div" action="http://httpbin.org/post" method="post">
-                <div class="form_imput">
-                <label for="first_name">First name</label>
-                <input type="text" id="first_name" name="first_name" placeholder="First Name">
+            <form class="form_div" action="http://httpbin.org/post" method="post"> 
+                <div class="white_space">
+                    <p class="form_header">Lets do this!</p>
+                    <div class="form_imput">
+                        <label for="first_name">First name</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+                    </div>
+                    <div class="form_imput">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+                    </div>
+                    <div class="form_imput">
+                        <label for="user_email">Email Address</label>
+                        <input type="email" id="user_email" name="email" placeholder="exmple@example.com" required>
+                    </div>
+                    <div class="form_imput">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="phone-number" placeholder="Phone number" required min="10" max="10">
+                    </div>
+                    <div class="form_imput">
+                        <label for="user_password">Password</label>
+                        <input type="password" id="user_password" name="password" required>
+                    </div>
+                    <div class="form_imput">
+                        <label for="user_password_confirm">Confirm Password</label>
+                        <input type="password" id="confirm_password" name="user_password_confirm" required>
+                    </div>
                 </div>
-
-                <div class="form_imput">
-                    <label for="user_email">Email Address</label>
-                    <input type="email" id="user_email" name="email" placeholder="exmple@example.com">
+                <div class="R_bottom">
+                    <button id="submit" type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
                 </div>
-
-                <div class="form_imput">
-                    <label for="user_password">Password</label>
-                    <input type="password" id="user_password" name="password">
-                </div>
-
-                <div class="form_imput">
-                    <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" name="last_name" placeholder="Last Name">
-                </div>
-
-                <div class="form_imput">
-                    <label for="phone_number">Phone Number</label>
-                    <input type="tel" id="phone_number" name="phone-number" placeholder="Phone number">
-                </div>
-
-                <div class="form_imput">
-                    <label for="user_password_confirm">Confirm Password</label>
-                    <input type="password" id="user_password_confirm" name="user_password_confirm">
-                </div>
-
             </form>
-        </div>
-        <div class="R_bottom">
-            <button type="submit">Create Account</button>
-            <p>Already have an account? Log in</p>
         </div>
     </div>
 </body>
