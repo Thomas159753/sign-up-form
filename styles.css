@@ -122,6 +122,10 @@ a{
     flex: 1;
 }
 
-input[type=password]:focus{
-    outline-color: red;
+.pasMatch{
+    color: red;
+    font-size: x-small;
+    width: 100%;
+    margin-left: 2%;
 }
+
